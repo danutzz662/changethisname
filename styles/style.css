@@ -155,7 +155,39 @@ hr {
 }
 
 .posts {
+  display: flex;
+  flex-direction: column;
   height: 60%;
+}
+
+.user-posts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+  overflow-y: scroll;
+  gap: 4px;
+  flex-grow: 1;
+  height: 0;
+}
+.user-posts::-webkit-scrollbar {
+  width: 5px;
+}
+.user-posts::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+.user-posts::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+.user-posts::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.user-post {
+  width: 115px;
+  height: 115px;
+  object-fit: cover;
 }
 
 .shortcuts {

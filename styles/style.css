@@ -1,36 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
 :root {
-  --color-primary: hsl(275, 50%, 90%);
-  --color-secondary: hsl(275, 50%, 10%);
-  --color-tertiary: hsl(335, 80%, 20%);
-  --color-accent: hsl(215, 80%, 20%);
+  --bg-dark: hsl(269 100% 3%);
+  --bg: hsl(276 82% 6%);
+  --bg-light: hsl(276 54% 11%);
+  --text: hsl(274 100% 100%);
+  --text-muted: hsl(274 52% 75%);
+  --highlight: hsl(275 32% 44%);
+  --border: hsl(276 42% 33%);
+  --border-muted: hsl(278 63% 21%);
+  --primary: hsl(274 65% 76%);
+  --secondary: hsl(89 40% 59%);
+  --danger: hsl(8 63% 66%);
+  --warning: hsl(52 49% 46%);
+  --success: hsl(151 41% 51%);
+  --info: hsl(217 73% 68%);
 }
 
-.dark {
-  --color-primary: hsl(275, 50%, 10%);
-  --color-secondary: hsl(275, 50%, 90%);
-  --color-tertiary: hsl(335, 80%, 80%);
-  --color-accent: hsl(215, 80%, 80%);
+.light {
+  --bg-dark: hsl(273 100% 94%);
+  --bg: hsl(273 100% 99%);
+  --bg-light: hsl(273 100% 100%);
+  --text: hsl(278 100% 7%);
+  --text-muted: hsl(276 42% 33%);
+  --highlight: hsl(274 100% 100%);
+  --border: hsl(275 34% 56%);
+  --border-muted: hsl(275 49% 69%);
+  --primary: hsl(276 42% 33%);
+  --secondary: hsl(81 100% 13%);
+  --danger: hsl(7 47% 42%);
+  --warning: hsl(53 100% 17%);
+  --success: hsl(161 100% 19%);
+  --info: hsl(217 50% 44%);
 }
 
 * {
   box-sizing: border-box;
+  font-family: "Inter", sans-serif;
 }
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
 }
 
 body {
+  padding: 0 8px 8px 8px;
+  background-color: var(--bg-dark);
   height: 100vh;
 }
 
 nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   border: 1px solid black;
-  height: 13%;
+  height: 10%;
   width: 100%;
   margin-bottom: 2vh;
-  background-color: pink;
+  background-color: var(--bg);
+  padding: 10px 10px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 30px -8px rgba(0, 0, 0, 0.71) inset;
+  gap: 15px;
+}
+
+.nav-middle {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.logo img {
+  height: 5rem;
+  width: auto;
+}
+
+.search-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+.search {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.vivid-search {
+  outline: none;
+  height: 35px;
+  width: 350px;
+  background-color: var(--bg-light);
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  padding: 0px 30px 0px 5px;
+  overflow: hidden;
+  color: var(--text);
+  font-family: "Inter", sans-serif;
+  line-height: 35px;
+}
+
+.vivid-search::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+
+.vivid-search::placeholder {
+  color: var(--text);
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+
+.vivid-search:focus {
+  outline: none;
+
+  border: 1px solid var(--highlight);
+}
+
+.clear-button {
+  position: absolute;
+  font-size: 18px;
+  z-index: 9999;
+  right: 5px;
+  top: 56%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.clear-icon {
+  color: var(--text-muted);
+}
+
+.search-button {
+  padding: 0;
+  outline: none;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.search-icon {
+  margin: 0;
+  padding: 0;
+
+  font-size: 28px;
+  color: var(--text-muted);
+}
+
+.links ul {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.links ul li {
+  list-style: none;
+  color: var(--text-muted);
+  margin: 0 5px 0 5px;
+}
+
+.links ul li a {
+  color: var(--text);
+  text-decoration: none;
+  margin: 0 5px 0 5px;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+
 }
 
 main {
@@ -38,25 +181,4 @@ main {
   width: 100%;
   display: flex;
   gap: 8px;
-}
-
-.aside-left {
-  border: 1px solid black;
-  height: 100%;
-  width: 25%;
-  background-color: aliceblue;
-}
-
-.content {
-  border: 1px solid black;
-  height: 100%;
-  width: 60%;
-  background-color: bisque;
-}
-
-.aside-right {
-  border: 1px solid black;
-  height: 100%;
-  width: 15%;
-  background-color: darkseagreen;
 }

@@ -8,7 +8,52 @@
     <title>Vivid</title>
   </head>
   <body>
-    <nav></nav>
+    <nav>
+      <div class="nav-left">
+        <div class="logo">
+          <img src="./media/logo.svg" alt="Vivid logo" />
+        </div>
+      </div>
+      <div class="nav-middle">
+        <div class="search-container">
+          <div class="search">
+            <input
+              type="search"
+              name="vivid-search"
+              id="vivid-search"
+              class="vivid-search"
+              placeholder="Search..."
+            />
+            <button class="clear-button">
+              <ion-icon class="clear-icon" name="close-outline"></ion-icon>
+            </button>
+          </div>
+          <button class="search-button">
+            <ion-icon class="search-icon" name="search-outline"></ion-icon>
+          </button>
+        </div>
+        <div class="links-container">
+          <div class="links">
+            <ul>
+              <li>
+                <ion-icon name="home-outline"></ion-icon><a href="#">Home</a>
+              </li>
+              <li>
+                <ion-icon name="mail-open-outline"></ion-icon
+                ><a href="#">Inbox</a>
+              </li>
+              <li>
+                <ion-icon name="send-outline"></ion-icon
+                ><a href="#">Notifications</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="nav-right">
+        <div class="user"></div>
+      </div>
+    </nav>
     <main>
       <aside class="aside-left"></aside>
       <article class="content"></article>

@@ -94,6 +94,7 @@ hr {
 }
 
 .profile-banner {
+  border: 1px solid var(--border);
   border-radius: 4px;
   height: 40%;
   width: 100%;
@@ -128,7 +129,7 @@ hr {
 }
 
 .profile-stats {
-  width: 100%;
+  width: 93%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -203,6 +204,9 @@ hr {
 .shortcut-icon {
   color: var(--text);
   font-size: 24px;
+}
+.shortcut-icon:hover {
+  cursor: pointer;
 }
 
 .content {

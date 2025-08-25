@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 :root {
   --bg-dark: hsl(269 100% 3%);
   --bg: hsl(276 82% 6%);
@@ -34,6 +36,7 @@
 
 * {
   box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
 }
 
 html, body {
@@ -76,6 +79,7 @@ main {
 
 hr {
   width: 100%;
+  border-color: var(--text-muted);
 }
 
 .display {
@@ -86,6 +90,68 @@ hr {
 
 .profile-info {
   height: 35%;
+  padding: 4px;
+}
+
+.profile-banner {
+  border-radius: 4px;
+  height: 40%;
+  width: 100%;
+  background: linear-gradient(
+    90deg,
+    var(--bg-light),
+    var(--border-muted),
+    var(--bg-light)
+  );
+}
+
+.profile-personal-info {
+  margin-top: -30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5%;
+  margin-bottom: 24px;
+}
+
+.profile-picture {
+  background-color: var(--bg);
+  padding: 10px;
+  border-radius: 50%;
+  width: 100px;
+  height: auto;
+}
+
+.profile-username {
+  color: var(--text);
+}
+
+.profile-stats {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 36px;
+}
+
+.profile-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.profile-stat p {
+  margin: 0;
+}
+
+.profile-number {
+  color: var(--text);
+}
+
+.profile-num-desc {
+  color: var(--text-muted);
 }
 
 .posts {

@@ -178,11 +178,12 @@ hr {
   background: #f1f1f1;
 }
 .user-posts::-webkit-scrollbar-thumb {
-  background: #888;
+  background: var(--highlight);
+  border: 1px solid var(--border);
   border-radius: 5px;
 }
 .user-posts::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: var(--primary);
 }
 
 .user-post {

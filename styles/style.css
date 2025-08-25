@@ -74,11 +74,13 @@ main {
   background-color: var(--bg);
 }
 
+hr {
+  width: 100%;
+}
+
 .display {
-  border: 1px solid var(--border-muted);
   border-radius: 8px;
   width: 100%;
-  background-color: var(--bg-light);
   margin-bottom: 5px;
 }
 

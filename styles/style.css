@@ -4,6 +4,7 @@
   --color-tertiary: hsl(335, 80%, 20%);
   --color-accent: hsl(215, 80%, 20%);
 }
+
 .dark {
   --color-primary: hsl(275, 50%, 10%);
   --color-secondary: hsl(275, 50%, 90%);

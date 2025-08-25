@@ -1,21 +1,4 @@
 :root {
-  --bg-dark: hsl(273 100% 94%);
-  --bg: hsl(273 100% 99%);
-  --bg-light: hsl(273 100% 100%);
-  --text: hsl(278 100% 7%);
-  --text-muted: hsl(276 42% 33%);
-  --highlight: hsl(274 100% 100%);
-  --border: hsl(275 34% 56%);
-  --border-muted: hsl(275 49% 69%);
-  --primary: hsl(276 42% 33%);
-  --secondary: hsl(81 100% 13%);
-  --danger: hsl(7 47% 42%);
-  --warning: hsl(53 100% 17%);
-  --success: hsl(161 100% 19%);
-  --info: hsl(217 50% 44%);
-}
-
-.dark {
   --bg-dark: hsl(269 100% 3%);
   --bg: hsl(276 82% 6%);
   --bg-light: hsl(276 54% 11%);
@@ -32,6 +15,23 @@
   --info: hsl(217 73% 68%);
 }
 
+.light {
+  --bg-dark: hsl(273 100% 94%);
+  --bg: hsl(273 100% 99%);
+  --bg-light: hsl(273 100% 100%);
+  --text: hsl(278 100% 7%);
+  --text-muted: hsl(276 42% 33%);
+  --highlight: hsl(274 100% 100%);
+  --border: hsl(275 34% 56%);
+  --border-muted: hsl(275 49% 69%);
+  --primary: hsl(276 42% 33%);
+  --secondary: hsl(81 100% 13%);
+  --danger: hsl(7 47% 42%);
+  --warning: hsl(53 100% 17%);
+  --success: hsl(161 100% 19%);
+  --info: hsl(217 50% 44%);
+}
+
 * {
   box-sizing: border-box;
 }
@@ -42,6 +42,8 @@ html, body {
 }
 
 body {
+  padding: 0 8px 8px 8px;
+  background-color: var(--bg-dark);
   height: 100vh;
 }
 
@@ -61,10 +63,33 @@ main {
 }
 
 .aside-left {
-  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  padding: 8px;
   height: 100%;
   width: 25%;
-  background-color: aliceblue;
+  background-color: var(--bg);
+}
+
+.display {
+  border: 1px solid var(--border-muted);
+  border-radius: 8px;
+  width: 100%;
+  background-color: var(--bg-light);
+  margin-bottom: 5px;
+}
+
+.profile-info {
+  height: 35%;
+}
+
+.posts {
+  height: 60%;
+}
+
+.shortcuts {
+  height: 5%;
 }
 
 .content {

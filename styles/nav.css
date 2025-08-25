@@ -1,0 +1,130 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid black;
+  height: 10%;
+  width: 100%;
+  margin-bottom: 2vh;
+  background-color: var(--bg);
+  padding: 10px 10px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 30px -8px rgba(0, 0, 0, 0.71) inset;
+  gap: 15px;
+}
+
+.nav-middle {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.logo img {
+  height: 5rem;
+  width: auto;
+}
+
+.search-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+.search {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.vivid-search {
+  outline: none;
+  height: 35px;
+  width: 350px;
+  background-color: var(--bg-light);
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  padding: 0px 30px 0px 5px;
+  overflow: hidden;
+  color: var(--text);
+  font-family: "Inter", sans-serif;
+  line-height: 35px;
+}
+
+.vivid-search::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+
+.vivid-search::placeholder {
+  color: var(--text);
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+
+.vivid-search:focus {
+  outline: none;
+
+  border: 1px solid var(--highlight);
+}
+
+.clear-button {
+  position: absolute;
+  font-size: 18px;
+  z-index: 9999;
+  right: 5px;
+  top: 56%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.clear-icon {
+  color: var(--text-muted);
+}
+
+.search-button {
+  padding: 0;
+  outline: none;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.search-icon {
+  margin: 0;
+  padding: 0;
+
+  font-size: 28px;
+  color: var(--text-muted);
+}
+
+.links ul {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.links ul li {
+  list-style: none;
+  color: var(--text-muted);
+  margin: 0 5px 0 5px;
+}
+
+.links ul li a {
+  color: var(--text);
+  text-decoration: none;
+  margin: 0 5px 0 5px;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+
+}
+
+main {
+  height: 85%;
+  width: 100%;
+  display: flex;
+  gap: 8px;
+}

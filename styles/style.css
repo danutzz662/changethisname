@@ -24,3 +24,39 @@ html, body {
 body {
   height: 100vh;
 }
+
+nav {
+  border: 1px solid black;
+  height: 13%;
+  width: 100%;
+  margin-bottom: 2vh;
+  background-color: pink;
+}
+
+main {
+  height: 85%;
+  width: 100%;
+  display: flex;
+  gap: 8px;
+}
+
+.aside-left {
+  border: 1px solid black;
+  height: 100%;
+  width: 25%;
+  background-color: aliceblue;
+}
+
+.content {
+  border: 1px solid black;
+  height: 100%;
+  width: 60%;
+  background-color: bisque;
+}
+
+.aside-right {
+  border: 1px solid black;
+  height: 100%;
+  width: 15%;
+  background-color: darkseagreen;
+}

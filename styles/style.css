@@ -50,3 +50,7 @@ body {
   background-color: var(--bg-dark);
   height: 100vh;
 }
+
+.hovered-icon:hover {
+  color: var(--text-muted);
+}

@@ -20,9 +20,34 @@
 }
 
 .suggested-profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 8px;
   border: 1px solid var(--border);
   width: 100%;
   height: 20%;
   background-color: var(--bg-light);
+  padding: 4px;
+}
+
+.suggested-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.suggested-pfp {
+  border-radius: 50%;
+  width: 70px;
+  height: auto;
+}
+
+.suggested-username {
+  color: var(--text);
+  text-decoration: none;
+}
+.suggested-username:hover {
+  color: var(--text-muted);
 }

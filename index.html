@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/nav.css" />
     <script src="./src/app.js" defer></script>
     <title>Vivid</title>
     <link rel="stylesheet" href="./styles/aside-left.css">
@@ -11,7 +12,57 @@
     <link rel="stylesheet" href="./styles/aside-right.css">
   </head>
   <body>
-    <nav></nav>
+    <nav>
+      <div class="nav-left">
+        <div class="logo">
+          <a href="#"><img src="./media/logo.svg" alt="Vivid logo" /></a>
+        </div>
+      </div>
+      <div class="nav-middle">
+        <div class="search-container">
+          <div class="search">
+            <input
+              type="search"
+              name="vivid-search"
+              id="vivid-search"
+              class="vivid-search"
+              placeholder="Search..."
+            />
+            <button class="clear-button">
+              <ion-icon class="clear-icon" name="close-outline"></ion-icon>
+            </button>
+          </div>
+          <button class="search-button">
+            <ion-icon class="search-icon" name="search-outline"></ion-icon>
+          </button>
+        </div>
+        <div class="links-container">
+          <div class="links">
+            <ul>
+              <li>
+                <a href="#"><ion-icon name="home-outline"></ion-icon></a>
+                <span class="tooltip">Home</span>
+              </li>
+              <li>
+                <a href="#"><ion-icon name="send-outline"></ion-icon></a
+                ><span class="tooltip">Inbox</span>
+              </li>
+              <li>
+                <a href="#"><ion-icon name="mail-open-outline"></ion-icon></a
+                ><span class="tooltip">Activity</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="nav-right">
+        <div class="user">
+          <img src="./media/user.png" alt="User profile picture" />
+          <h3>cut3cat69</h3>
+        </div>
+        <button><ion-icon name="chevron-down-outline"></ion-icon></button>
+      </div>
+    </nav>
     <main>
       <aside class="aside-left">
         <div class="profile-info display">

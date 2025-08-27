@@ -2,7 +2,6 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border: 1px solid black;
   height: 10%;
   width: 100%;
   margin-bottom: 2vh;
@@ -112,7 +111,6 @@ nav {
 
 .links li {
   position: relative;
-  /* color: var(--text-muted); */
   margin: 0 20px;
 }
 

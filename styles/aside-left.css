@@ -59,6 +59,11 @@ hr {
 
 .profile-username {
   color: var(--text);
+  text-decoration: none;
+}
+.profile-username:hover {
+  cursor: pointer;
+  color: var(--text-muted);
 }
 
 .profile-stats {

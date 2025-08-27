@@ -28,8 +28,12 @@
 }
 
 .highlights::-webkit-scrollbar-thumb {
-  background-color: var(--text-muted);
-  border-radius: 8px;
+  background-color: var(--primary);
+  border-radius: 5px;
+}
+
+.highlights::-webkit-scrollbar-thumb:hover {
+  background: var(--border-muted);
 }
 
 .highlights::-webkit-scrollbar-track {
@@ -37,7 +41,6 @@
   margin-right: 10px;
   background: transparent;
   margin-left: 10px;
-
 }
 
 .highlights-card {

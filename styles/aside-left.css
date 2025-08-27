@@ -123,8 +123,8 @@ hr {
 }
 
 .user-post {
-  width: 110px;
-  height: 110px;
+  width: 105px;
+  height: auto;
   object-fit: cover;
 }
 

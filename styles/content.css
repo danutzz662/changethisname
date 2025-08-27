@@ -67,14 +67,16 @@
 }
 
 .content-card {
-  height: 180px;
+  height: 300px;
+  width: auto;
   position: relative;
   scroll-snap-align: start;
 }
 
 .content-card>img:first-child {
   object-fit: fill;
-  height: 180px;
+  height: 300px;
+  width: auto;
   border-radius: 4px;
 }
 

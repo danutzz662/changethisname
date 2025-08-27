@@ -18,6 +18,9 @@
 .content::-webkit-scrollbar-thumb:hover {
   background: var(--border);
 }
+.content::-webkit-scrollbar-track {
+  margin: 20px -20px 20px 0;
+}
 
 .title {
   width: 95%;
@@ -49,16 +52,13 @@
   height: 5px;
   /* background-color: var(--bg-light); */
 }
-
 .social-media-posts::-webkit-scrollbar-thumb {
   background-color: var(--primary);
   border-radius: 5px;
 }
-
 .social-media-posts::-webkit-scrollbar-thumb:hover {
   background: var(--border);
 }
-
 .social-media-posts::-webkit-scrollbar-track {
   width: 15px;
   margin-right: 10px;

@@ -8,18 +8,25 @@
   background-color: var(--bg);
 }
 
+/*? Highlights Section */
+.highlights-posts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 95%;
+}
+
 .highlights {
   display: flex;
   align-items: center;
-  flex-direction: row;
   flex-wrap: nowrap;
   overflow-x: scroll;
-  box-sizing: border-box;
-  width: 95%;
+  width: 100%;
   gap: 12px;
   scroll-snap-type: x mandatory;
-  /* scrollbar-width: none; */
   overflow-y: hidden;
+  /* scrollbar-width: none; */
 }
 
 .highlights::-webkit-scrollbar {

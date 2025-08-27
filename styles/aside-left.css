@@ -97,6 +97,8 @@ hr {
   display: flex;
   flex-direction: column;
   height: 60%;
+  background-color: var(--bg-posts);
+  padding: 4px;
 }
 
 .user-posts {

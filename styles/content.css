@@ -45,7 +45,7 @@
 }
 
 .social-media-posts::-webkit-scrollbar-thumb:hover {
-  background: var(--border-muted);
+  background: var(--border);
 }
 
 .social-media-posts::-webkit-scrollbar-track {

@@ -78,10 +78,9 @@
   right: 0px;
   left: 0px;
   padding: 5px;
-  background: rgba(170, 170, 170, 0.3);
-  backdrop-filter: blur(10px);
+  background-color: var(--bg-light);
+  border-top: 3px solid var(--border);
   gap: 5px;
-  border-radius: 2px;
 }
 
 .card-info img {
@@ -98,5 +97,5 @@
 }
 .card-info a:hover {
   cursor: pointer;
-  color: var(--highlight);
+  color: var(--text-muted);
 }

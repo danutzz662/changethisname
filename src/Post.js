@@ -65,4 +65,4 @@ class Post extends HTMLElement {
   }
 }
 
-customElements.define("Post", Post);
+customElements.define("user-post", Post);

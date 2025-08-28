@@ -59,9 +59,9 @@ class Post extends HTMLElement {
     `;
   }
   connectedCallback() {
-    this.shadowRoot.querySelector("#post-image").src = this.getAttribute("img1") || "";
-    this.shadowRoot.querySelector("#post-pfp").src = this.getAttribute("img2") || "";
-    this.shadowRoot.querySelector("a").textContent = `@${this.getAttribute("username")}` || "";
+    this.shadowRoot.querySelector("#post-image").src = this.getAttribute("img1") || "../media/placeholder.webp";
+    this.shadowRoot.querySelector("#post-pfp").src = this.getAttribute("img2") || "../media/placeholder.webp";
+    this.shadowRoot.querySelector("a").textContent = `@${this.getAttribute("username")}` || "Username";
   }
 }
 

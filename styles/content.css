@@ -31,26 +31,21 @@
 .content-posts {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
   width: 95%;
 }
 
 .social-media-posts {
   display: flex;
   align-items: center;
-  flex-wrap: nowrap;
   overflow-x: scroll;
   width: 100%;
   gap: 12px;
   scroll-snap-type: x mandatory;
   overflow-y: hidden;
-  /* scrollbar-width: none; */
 }
 
 .social-media-posts::-webkit-scrollbar {
   height: 5px;
-  /* background-color: var(--bg-light); */
 }
 .social-media-posts::-webkit-scrollbar-thumb {
   background-color: var(--primary);
@@ -84,8 +79,6 @@
   height: 35px;
   display: flex;
   align-items: center;
-  flex-direction: row;
-  flex-wrap: nowrap;
   position: absolute;
   bottom: 0px;
   right: 0px;

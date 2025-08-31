@@ -33,6 +33,12 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-right: 5px;
+}
+
+.nav-icon {
+  color: var(--text);
+  font-size: 28px;
 }
 
 .search-section {
@@ -60,9 +66,7 @@ nav {
 .nav-search-button {
   background: none;
   border: none;
-  color: var(--text);
   cursor: pointer;
-  font-size: 28px;
 }
 
 .actions-section {
@@ -91,5 +95,33 @@ nav {
 .nav-right {
   width: 15%;
   height: 100%;
-  background-color: crimson;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-left: 3px solid var(--border-muted);
+}
+
+.nav-user {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  gap: 10px;
+}
+
+.nav-user-pfp {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.nav-user-name {
+  color: var(--text);
+  text-decoration: none;
+}
+.nav-user-name:hover {
+  color: var(--text-muted);
+}
+
+.hidden {
+  display: none;
 }

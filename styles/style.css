@@ -60,4 +60,5 @@ main {
 
 .hovered-icon:hover {
   color: var(--text-muted);
+  cursor: pointer;
 }

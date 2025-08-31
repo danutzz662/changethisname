@@ -20,29 +20,39 @@
       <div class="nav-middle">
         <div class="search-section">
           <input type="search" class="nav-input-search" placeholder="Search..." />
-          <button type="button" class="nav-search-button hovered-icon"><ion-icon name="search"></ion-icon></button>
+          <button type="button" class="nav-search-button nav-icon hovered-icon"><ion-icon name="search"></ion-icon></button>
         </div>
         <div class="actions-section">
           <ul class="actions">
             <li class="action">
               <a href="#">
-                <ion-icon class="action-icon hovered-icon" name="home-outline"></ion-icon>
+                <ion-icon class="nav-icon hovered-icon" name="home-outline"></ion-icon>
               </a>
             </li>
             <li class="action">
               <a href="#">
-                <ion-icon class="action-icon hovered-icon" name="send-outline"></ion-icon>
+                <ion-icon class="nav-icon hovered-icon" name="send-outline"></ion-icon>
               </a>
             </li>
             <li class="action">
               <a href="#">
-                <ion-icon class="action-icon hovered-icon" name="mail-outline"></ion-icon>
+                <ion-icon class="nav-icon hovered-icon" name="mail-outline"></ion-icon>
               </a>
             </li>
           </ul>
         </div>
       </div>
-      <div class="nav-right"></div>
+      <div class="nav-right">
+        <div class="nav-user">
+          <img class="nav-user-pfp" src="./media/user.png" alt="User profile picture"/>
+          <a href="#" class="nav-user-name">cut3cat69</a>
+        </div>
+        <ion-icon class="nav-icon hovered-icon" name="chevron-down"></ion-icon>
+        <div class="mode">
+          <ion-icon id="light-mode" class="nav-icon hovered-icon" name="sunny-outline"></ion-icon>
+          <ion-icon id="dark-mode" class="nav-icon hidden hovered-icon" name="moon-outline"></ion-icon>
+        </div>
+      </div>
     </nav>
     <main>
       <aside class="aside-left">

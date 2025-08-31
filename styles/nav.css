@@ -29,7 +29,36 @@ nav {
 .nav-middle {
   width: 80%;
   height: 100%;
-  background-color: chartreuse;
+
+}
+
+.search-section {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  height: 100%;
+}
+
+.nav-input-search {
+  border: 2px solid var(--border);
+  border-radius: 5px;
+  width: 30%;
+  height: 50%;
+  padding: 10px;
+  background-color: var(--bg-light);
+  color: var(--text);
+}
+.nav-input-search:focus {
+  outline: none;
+  border: 2px solid var(--border-muted);
+}
+
+.nav-search-button {
+  background: none;
+  border: none;
+  color: var(--text);
+  cursor: pointer;
+  font-size: 24px;
 }
 
 .nav-right {

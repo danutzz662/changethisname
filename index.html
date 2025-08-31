@@ -15,85 +15,43 @@
   <body>
     <nav>
       <div class="nav-left">
-        <div class="logo">
-          <a href="#"><img src="./media/logo.svg" alt="Vivid logo" /></a>
-        </div>
+        <a href="#"><img class="vivid-logo" src="./media/logo.svg" alt="Vivid logo"/></a>
       </div>
       <div class="nav-middle">
-        <div class="search-container">
-          <div class="search">
-            <input
-              type="search"
-              name="vivid-search"
-              id="vivid-search"
-              class="vivid-search"
-              placeholder="Search..."
-            />
-            <button class="clear-button">
-              <ion-icon
-                class="clear-icon hovered-icon"
-                name="close-outline"
-              ></ion-icon>
-            </button>
-          </div>
-          <button class="search-button">
-            <ion-icon
-              class="search-icon hovered-icon"
-              name="search-outline"
-            ></ion-icon>
-          </button>
+        <div class="search-section">
+          <input type="search" class="nav-input-search" placeholder="Search..." />
+          <button type="button" class="nav-search-button nav-icon hovered-icon"><ion-icon name="search"></ion-icon></button>
         </div>
-        <div class="links-container">
-          <div class="links">
-            <ul>
-              <li>
-                <a href="#"
-                  ><ion-icon class="hovered-icon" name="home-outline"></ion-icon
-                ></a>
-                <span class="tooltip">Home</span>
-              </li>
-              <li>
-                <a href="#"
-                  ><ion-icon
-                    class="hovered-icon"
-                    name="send-outline"
-                  ></ion-icon></a
-                ><span class="tooltip">Inbox</span>
-              </li>
-              <li>
-                <a href="#"
-                  ><ion-icon
-                    class="hovered-icon"
-                    name="mail-open-outline"
-                  ></ion-icon></a
-                ><span class="tooltip">Activity</span>
-              </li>
-            </ul>
-          </div>
+        <div class="actions-section">
+          <ul class="actions">
+            <li class="action">
+              <a href="#">
+                <ion-icon class="nav-icon hovered-icon" name="home-outline"></ion-icon>
+              </a>
+            </li>
+            <li class="action">
+              <a href="#">
+                <ion-icon class="nav-icon hovered-icon" name="send-outline"></ion-icon>
+              </a>
+            </li>
+            <li class="action">
+              <a href="#">
+                <ion-icon class="nav-icon hovered-icon" name="mail-outline"></ion-icon>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
       <div class="nav-right">
-        <div class="user">
-          <img src="./media/user.png" alt="User profile picture" />
-          <h3>cut3cat69</h3>
+        <div class="nav-user">
+          <img class="nav-user-pfp" src="./media/user.png" alt="User profile picture"/>
+          <a href="#" class="nav-user-name">cut3cat69</a>
         </div>
-        <button>
-          <ion-icon class="hovered-icon" name="chevron-down-outline"></ion-icon>
-        </button>
-        <button class="mode">
-          <ion-icon
-            id="light-mode"
-            class="hovered-icon"
-            name="sunny-outline"
-          ></ion-icon>
-        </button>
-        <button class="mode">
-          <ion-icon
-            id="dark-mode"
-            class="hidden hovered-icon"
-            name="moon-outline"
-          ></ion-icon>
-        </button>
+        <ion-icon class="nav-icon hovered-icon" name="chevron-down"></ion-icon>
+        <div class="mode">
+          <ion-icon id="light-mode" class="nav-icon hovered-icon" name="sunny-outline"></ion-icon>
+          <ion-icon id="dark-mode" class="nav-icon hidden hovered-icon" name="moon-outline"></ion-icon>
+        </div>
       </div>
     </nav>
     <main>

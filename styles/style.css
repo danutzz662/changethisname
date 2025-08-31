@@ -52,7 +52,7 @@ body {
 }
 
 main {
-  height: 85%;
+  height: 88%;
   width: 100%;
   display: flex;
   gap: 8px;
@@ -60,4 +60,5 @@ main {
 
 .hovered-icon:hover {
   color: var(--text-muted);
+  cursor: pointer;
 }

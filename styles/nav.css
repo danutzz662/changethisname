@@ -1,190 +1,130 @@
 nav {
   display: flex;
   align-items: center;
+  justify-content: center;
   justify-content: space-between;
   height: 10%;
   width: 100%;
   margin-bottom: 2vh;
   background-color: var(--bg);
-  padding: 10px;
+  padding: 5px 10px;
   border-radius: 5px;
   box-shadow: 0px 0px 30px -8px rgba(0, 0, 0, 0.71) inset;
-  gap: 15px;
+  gap: 10px;
+}
+
+.nav-left {
+  width: 5%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.vivid-logo {
+  width: 100%;
+  min-width: 60px;
+  height: auto;
 }
 
 .nav-middle {
-  width: 100%;
+  width: 80%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-direction: row;
+  margin-right: 5px;
 }
 
-.logo img {
-  height: 5rem;
-  width: auto;
+.nav-icon {
+  color: var(--text);
+  font-size: 28px;
 }
 
-.search-container {
+.search-section {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 5px;
+  height: 100%;
+  width: 80%;
 }
 
-.search {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-}
-
-.vivid-search {
-  outline: none;
-  height: 35px;
-  width: 350px;
-  background-color: var(--bg-light);
-  border: 1px solid var(--border);
+.nav-input-search {
+  border: 2px solid var(--border);
   border-radius: 5px;
-  padding: 0px 30px 0px 5px;
+  width: 40%;
+  height: 55%;
+  padding: 10px;
+  background-color: var(--bg-light);
   color: var(--text);
 }
-.vivid-search::-webkit-search-cancel-button {
+.nav-input-search:focus {
+  outline: none;
+  border: 2px solid var(--border-muted);
+}
+.nav-input-search::-webkit-search-cancel-button {
   -webkit-appearance: none;
-}
-.vivid-search::placeholder {
-  color: var(--text);
-  font-weight: 400;
-}
-.vivid-search:focus {
-  outline: none;
-  border: 1px solid var(--highlight);
-}
-
-.clear-button {
-  position: absolute;
-  font-size: 18px;
-  right: 5px;
-  top: 56%;
-  transform: translateY(-50%);
-  background: none;
-  border: none;
+  background: url('../media/close-outline.svg') no-repeat center center;
+  height: 12px;
+  width: 12px;
+  background-size: 24px 24px;
   cursor: pointer;
 }
 
-.clear-icon {
-  color: var(--text);
-}
-
-.search-button {
-  padding: 0;
-  outline: none;
-  cursor: pointer;
+.nav-search-button {
   background: none;
   border: none;
 }
 
-.search-icon {
-  margin: 0;
-  padding: 0;
-  font-size: 28px;
-  color: var(--text);
-}
-
-.links ul {
-  margin: 0;
-  padding: 0;
+.actions-section {
   display: flex;
   align-items: center;
-  flex-direction: row;
-  list-style: none;
+  justify-content: center;
+  width: 20%;
+  height: 100%;
 }
 
-.links li {
-  position: relative;
-  margin: 0 20px;
-}
-
-.links a ion-icon {
-  color: var(--text);
-  text-decoration: none;
-  margin: 0 24px;
-  font-size: 28px;
-  transition: color 0.3s;
-}
-.links a:hover {
-  color: var(--highlight);
-}
-
-.tooltip {
-  opacity: 0;
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-10px);
-  background-color: var(--bg-light);
-  color: var(--text-muted);
-  padding: 10px 20px;
-  border-radius: 5px;
-  font-size: 18px;
-  visibility: hidden;
-  transition: opacity 0.3s ease-in-out, transform 0.3s;
-}
-
-.links li a:hover+.tooltip {
-  opacity: 1;
-  visibility: visible;
-  transform: translateX(-50%) translateY(10px);
+.actions {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .nav-right {
-  width: 300px;
+  width: 15%;
+  height: 100%;
   display: flex;
   align-items: center;
-  margin: 0;
-  padding: 0;
-  border-left: 2px solid var(--bg-light);
-  padding: 0 15px;
-  gap: 8px;
+  gap: 10px;
+  border-left: 3px solid var(--border-muted);
 }
 
-.user {
+.nav-user {
+  height: 100%;
   display: flex;
   align-items: center;
-  gap: 8px;
-  color: var(--text);
+  margin-left: 10px;
+  gap: 10px;
 }
 
-.user img {
+.nav-user-pfp {
   width: 50px;
-  height: auto;
   border-radius: 50%;
 }
 
-.nav-right button {
+.nav-user-name {
   color: var(--text);
-  background: none;
-  border: none;
-  position: relative;
+  text-decoration: none;
+  font-weight: 600;
 }
-
-.nav-right ion-icon {
-  font-size: 28px;
-  cursor: pointer;
-}
-
-.mode:has(ion-icon) {
-  cursor: pointer;
-  display: block;
-  position: absolute;
-  right: 0.5%
+.nav-user-name:hover {
+  color: var(--text-muted);
 }
 
 .hidden {
   display: none;
-}
-
-.main {
-  height: 85%;
-  width: 100%;
-  display: flex;
-  gap: 8px;
 }

@@ -10,13 +10,20 @@ nav {
   padding: 5px 10px;
   border-radius: 5px;
   box-shadow: 0px 0px 30px -8px rgba(0, 0, 0, 0.71) inset;
-  gap: 15px;
+  gap: 10px;
 }
 
 .nav-left {
   width: 5%;
   height: 100%;
-  background-color: cadetblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.vivid-logo {
+  width: 100%;
+  height: auto;
 }
 
 .nav-middle {

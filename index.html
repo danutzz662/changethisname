@@ -15,28 +15,45 @@
   <body>
     <nav>
       <div class="nav-left">
-        <a href="#"><img class="vivid-logo" src="./media/logo.svg" alt="Vivid logo"/></a>
+        <a href="#"
+          ><img class="vivid-logo" src="./media/logo.svg" alt="Vivid logo"
+        /></a>
       </div>
       <div class="nav-middle">
         <div class="search-section">
-          <input type="search" class="nav-input-search" placeholder="Search..." />
-          <button type="button" class="nav-search-button nav-icon hovered-icon"><ion-icon name="search"></ion-icon></button>
+          <input
+            type="search"
+            class="nav-input-search"
+            placeholder="Search..."
+          />
+          <button type="button" class="nav-search-button nav-icon hovered-icon">
+            <ion-icon name="search"></ion-icon>
+          </button>
         </div>
         <div class="actions-section">
           <ul class="actions">
             <li class="action">
               <a href="#">
-                <ion-icon class="nav-icon hovered-icon" name="home-outline"></ion-icon>
+                <ion-icon
+                  class="nav-icon hovered-icon"
+                  name="home-outline"
+                ></ion-icon>
               </a>
             </li>
             <li class="action">
               <a href="#">
-                <ion-icon class="nav-icon hovered-icon" name="send-outline"></ion-icon>
+                <ion-icon
+                  class="nav-icon hovered-icon"
+                  name="send-outline"
+                ></ion-icon>
               </a>
             </li>
             <li class="action">
               <a href="#">
-                <ion-icon class="nav-icon hovered-icon" name="mail-outline"></ion-icon>
+                <ion-icon
+                  class="nav-icon hovered-icon"
+                  name="mail-outline"
+                ></ion-icon>
               </a>
             </li>
           </ul>
@@ -44,13 +61,65 @@
       </div>
       <div class="nav-right">
         <div class="nav-user">
-          <img class="nav-user-pfp" src="./media/user.png" alt="User profile picture"/>
+          <img
+            class="nav-user-pfp"
+            src="./media/user.png"
+            alt="User profile picture"
+          />
           <a href="#" class="nav-user-name">cut3cat69</a>
         </div>
-        <ion-icon class="nav-icon hovered-icon" name="chevron-down"></ion-icon>
+        <ion-icon
+          id="menuBtn"
+          class="nav-icon hovered-icon"
+          name="chevron-down"
+        ></ion-icon>
+        <div id="drop-down-menu" class="drop-down-menu">
+          <ul>
+            <li>
+              <a href="">
+                <ion-icon class="nav-icon" name="home-outline"></ion-icon
+                ><span>Home</span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <ion-icon class="nav-icon" name="send-outline"></ion-icon
+                ><span>Inbox</span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <ion-icon class="nav-icon" name="mail-outline"></ion-icon
+                ><span>Messages</span>
+              </a>
+            </li>
+            <li>
+              <div class="mode">
+                <ion-icon
+                  id="light-mode"
+                  class="nav-icon hovered-icon"
+                  name="sunny-outline"
+                ></ion-icon>
+                <ion-icon
+                  id="dark-mode"
+                  class="nav-icon hidden hovered-icon"
+                  name="moon-outline"
+                ></ion-icon>
+              </div>
+            </li>
+          </ul>
+        </div>
         <div class="mode">
-          <ion-icon id="light-mode" class="nav-icon hovered-icon" name="sunny-outline"></ion-icon>
-          <ion-icon id="dark-mode" class="nav-icon hidden hovered-icon" name="moon-outline"></ion-icon>
+          <ion-icon
+            id="light-mode"
+            class="nav-icon hovered-icon"
+            name="sunny-outline"
+          ></ion-icon>
+          <ion-icon
+            id="dark-mode"
+            class="nav-icon hidden hovered-icon"
+            name="moon-outline"
+          ></ion-icon>
         </div>
       </div>
     </nav>
@@ -181,21 +250,81 @@
             <h2>For You</h2>
           </div>
           <div id="for-you" class="social-media-posts">
-            <user-post img1="./media/for-you.webp" img2="./media/for-you-pfp.webp" username="normalk1tten01"></user-post>
-            <user-post img1="./media/for-you.webp" img2="./media/for-you-pfp.webp" username="sleepycat47"></user-post>
-            <user-post img1="./media/for-you.webp" img2="./media/for-you-pfp.webp" username="spicykitten22"></user-post>
-            <user-post img1="./media/for-you.webp" img2="./media/for-you-pfp.webp" username="fluffykitty19"></user-post>
-            <user-post img1="./media/for-you.webp" img2="./media/for-you-pfp.webp" username="coolc4t08"></user-post>
-            <user-post img1="./media/for-you.webp" img2="./media/for-you-pfp.webp" username="tinytom55"></user-post>
-            <user-post img1="./media/for-you.webp" img2="./media/for-you-pfp.webp" username="chubbycat33"></user-post>
-            <user-post img1="./media/for-you.webp" img2="./media/for-you-pfp.webp" username="happykitt3n91"></user-post>
-            <user-post img1="./media/for-you.webp" img2="./media/for-you-pfp.webp" username="sneakykitty12"></user-post>
-            <user-post img1="./media/for-you.webp" img2="./media/for-you-pfp.webp" username="bravecat66"></user-post>
-            <user-post img1="./media/for-you.webp" img2="./media/for-you-pfp.webp" username="l0yalkitty04"></user-post>
-            <user-post img1="./media/for-you.webp" img2="./media/for-you-pfp.webp" username="funkykitten25"></user-post>
-            <user-post img1="./media/for-you.webp" img2="./media/for-you-pfp.webp" username="fiercecat73"></user-post>
-            <user-post img1="./media/for-you.webp" img2="./media/for-you-pfp.webp" username="lazykitty82"></user-post>
-            <user-post img1="./media/for-you.webp" img2="./media/for-you-pfp.webp" username="silliestc4t"></user-post>
+            <user-post
+              img1="./media/for-you.webp"
+              img2="./media/for-you-pfp.webp"
+              username="normalk1tten01"
+            ></user-post>
+            <user-post
+              img1="./media/for-you.webp"
+              img2="./media/for-you-pfp.webp"
+              username="sleepycat47"
+            ></user-post>
+            <user-post
+              img1="./media/for-you.webp"
+              img2="./media/for-you-pfp.webp"
+              username="spicykitten22"
+            ></user-post>
+            <user-post
+              img1="./media/for-you.webp"
+              img2="./media/for-you-pfp.webp"
+              username="fluffykitty19"
+            ></user-post>
+            <user-post
+              img1="./media/for-you.webp"
+              img2="./media/for-you-pfp.webp"
+              username="coolc4t08"
+            ></user-post>
+            <user-post
+              img1="./media/for-you.webp"
+              img2="./media/for-you-pfp.webp"
+              username="tinytom55"
+            ></user-post>
+            <user-post
+              img1="./media/for-you.webp"
+              img2="./media/for-you-pfp.webp"
+              username="chubbycat33"
+            ></user-post>
+            <user-post
+              img1="./media/for-you.webp"
+              img2="./media/for-you-pfp.webp"
+              username="happykitt3n91"
+            ></user-post>
+            <user-post
+              img1="./media/for-you.webp"
+              img2="./media/for-you-pfp.webp"
+              username="sneakykitty12"
+            ></user-post>
+            <user-post
+              img1="./media/for-you.webp"
+              img2="./media/for-you-pfp.webp"
+              username="bravecat66"
+            ></user-post>
+            <user-post
+              img1="./media/for-you.webp"
+              img2="./media/for-you-pfp.webp"
+              username="l0yalkitty04"
+            ></user-post>
+            <user-post
+              img1="./media/for-you.webp"
+              img2="./media/for-you-pfp.webp"
+              username="funkykitten25"
+            ></user-post>
+            <user-post
+              img1="./media/for-you.webp"
+              img2="./media/for-you-pfp.webp"
+              username="fiercecat73"
+            ></user-post>
+            <user-post
+              img1="./media/for-you.webp"
+              img2="./media/for-you-pfp.webp"
+              username="lazykitty82"
+            ></user-post>
+            <user-post
+              img1="./media/for-you.webp"
+              img2="./media/for-you-pfp.webp"
+              username="silliestc4t"
+            ></user-post>
           </div>
         </div>
         <div id="highlights-posts" class="content-posts">
@@ -203,21 +332,81 @@
             <h2>Highlights</h2>
           </div>
           <div id="highlights" class="social-media-posts">
-            <user-post img1="./media/highlight-bg.jpg" img2="./media/cat-w-glasses.webp" username="goodkitty91"></user-post>
-            <user-post img1="./media/highlight-bg.jpg" img2="./media/cat-w-glasses.webp" username="shmolkitty18"></user-post>
-            <user-post img1="./media/highlight-bg.jpg" img2="./media/cat-w-glasses.webp" username="shadowcat88"></user-post>
-            <user-post img1="./media/highlight-bg.jpg" img2="./media/cat-w-glasses.webp" username="sp0tlesskitty35"></user-post>
-            <user-post img1="./media/highlight-bg.jpg" img2="./media/cat-w-glasses.webp" username="cuddlyk1tty7"></user-post>
-            <user-post img1="./media/highlight-bg.jpg" img2="./media/cat-w-glasses.webp" username="cuttestcat16"></user-post>
-            <user-post img1="./media/highlight-bg.jpg" img2="./media/cat-w-glasses.webp" username="sl33pykitty07"></user-post>
-            <user-post img1="./media/highlight-bg.jpg" img2="./media/cat-w-glasses.webp" username="grumpytom45"></user-post>
-            <user-post img1="./media/highlight-bg.jpg" img2="./media/cat-w-glasses.webp" username="bouncycat02"></user-post>
-            <user-post img1="./media/highlight-bg.jpg" img2="./media/cat-w-glasses.webp" username="luckykitty32"></user-post>
-            <user-post img1="./media/highlight-bg.jpg" img2="./media/cat-w-glasses.webp" username="lovelykitten23"></user-post>
-            <user-post img1="./media/highlight-bg.jpg" img2="./media/cat-w-glasses.webp" username="wittykitty11"></user-post>
-            <user-post img1="./media/highlight-bg.jpg" img2="./media/cat-w-glasses.webp" username="gentlecat0"></user-post>
-            <user-post img1="./media/highlight-bg.jpg" img2="./media/cat-w-glasses.webp" username="sneakycat93"></user-post>
-            <user-post img1="./media/highlight-bg.jpg" img2="./media/cat-w-glasses.webp" username="loverkitty29"></user-post>
+            <user-post
+              img1="./media/highlight-bg.jpg"
+              img2="./media/cat-w-glasses.webp"
+              username="goodkitty91"
+            ></user-post>
+            <user-post
+              img1="./media/highlight-bg.jpg"
+              img2="./media/cat-w-glasses.webp"
+              username="shmolkitty18"
+            ></user-post>
+            <user-post
+              img1="./media/highlight-bg.jpg"
+              img2="./media/cat-w-glasses.webp"
+              username="shadowcat88"
+            ></user-post>
+            <user-post
+              img1="./media/highlight-bg.jpg"
+              img2="./media/cat-w-glasses.webp"
+              username="sp0tlesskitty35"
+            ></user-post>
+            <user-post
+              img1="./media/highlight-bg.jpg"
+              img2="./media/cat-w-glasses.webp"
+              username="cuddlyk1tty7"
+            ></user-post>
+            <user-post
+              img1="./media/highlight-bg.jpg"
+              img2="./media/cat-w-glasses.webp"
+              username="cuttestcat16"
+            ></user-post>
+            <user-post
+              img1="./media/highlight-bg.jpg"
+              img2="./media/cat-w-glasses.webp"
+              username="sl33pykitty07"
+            ></user-post>
+            <user-post
+              img1="./media/highlight-bg.jpg"
+              img2="./media/cat-w-glasses.webp"
+              username="grumpytom45"
+            ></user-post>
+            <user-post
+              img1="./media/highlight-bg.jpg"
+              img2="./media/cat-w-glasses.webp"
+              username="bouncycat02"
+            ></user-post>
+            <user-post
+              img1="./media/highlight-bg.jpg"
+              img2="./media/cat-w-glasses.webp"
+              username="luckykitty32"
+            ></user-post>
+            <user-post
+              img1="./media/highlight-bg.jpg"
+              img2="./media/cat-w-glasses.webp"
+              username="lovelykitten23"
+            ></user-post>
+            <user-post
+              img1="./media/highlight-bg.jpg"
+              img2="./media/cat-w-glasses.webp"
+              username="wittykitty11"
+            ></user-post>
+            <user-post
+              img1="./media/highlight-bg.jpg"
+              img2="./media/cat-w-glasses.webp"
+              username="gentlecat0"
+            ></user-post>
+            <user-post
+              img1="./media/highlight-bg.jpg"
+              img2="./media/cat-w-glasses.webp"
+              username="sneakycat93"
+            ></user-post>
+            <user-post
+              img1="./media/highlight-bg.jpg"
+              img2="./media/cat-w-glasses.webp"
+              username="loverkitty29"
+            ></user-post>
           </div>
         </div>
         <div id="following-posts" class="content-posts">
@@ -225,21 +414,81 @@
             <h2>Following</h2>
           </div>
           <div id="following" class="social-media-posts">
-            <user-post img1="./media/following-post.webp" img2="./media/following-pfp.webp" username="fluffykitten42"></user-post>
-            <user-post img1="./media/following-post.webp" img2="./media/following-pfp.webp" username="sneakypuss13"></user-post>
-            <user-post img1="./media/following-post.webp" img2="./media/following-pfp.webp" username="sassyfeline77"></user-post>
-            <user-post img1="./media/following-post.webp" img2="./media/following-pfp.webp" username="sleepymoggy08"></user-post>
-            <user-post img1="./media/following-post.webp" img2="./media/following-pfp.webp" username="cheekytom99"></user-post>
-            <user-post img1="./media/following-post.webp" img2="./media/following-pfp.webp" username="playfulkitty21"></user-post>
-            <user-post img1="./media/following-post.webp" img2="./media/following-pfp.webp" username="cuddlytabby56"></user-post>
-            <user-post img1="./media/following-post.webp" img2="./media/following-pfp.webp" username="grumpypurrer64"></user-post>
-            <user-post img1="./media/following-post.webp" img2="./media/following-pfp.webp" username="shinypanther32"></user-post>
-            <user-post img1="./media/following-post.webp" img2="./media/following-pfp.webp" username="lazylioness15"></user-post>
-            <user-post img1="./media/following-post.webp" img2="./media/following-pfp.webp" username="bravetiger09"></user-post>
-            <user-post img1="./media/following-post.webp" img2="./media/following-pfp.webp" username="sillypurrer28"></user-post>
-            <user-post img1="./media/following-post.webp" img2="./media/following-pfp.webp" username="shadowycat73"></user-post>
-            <user-post img1="./media/following-post.webp" img2="./media/following-pfp.webp" username="bouncypuma19"></user-post>
-            <user-post img1="./media/following-post.webp" img2="./media/following-pfp.webp" username="chillcheetah88"></user-post>
+            <user-post
+              img1="./media/following-post.webp"
+              img2="./media/following-pfp.webp"
+              username="fluffykitten42"
+            ></user-post>
+            <user-post
+              img1="./media/following-post.webp"
+              img2="./media/following-pfp.webp"
+              username="sneakypuss13"
+            ></user-post>
+            <user-post
+              img1="./media/following-post.webp"
+              img2="./media/following-pfp.webp"
+              username="sassyfeline77"
+            ></user-post>
+            <user-post
+              img1="./media/following-post.webp"
+              img2="./media/following-pfp.webp"
+              username="sleepymoggy08"
+            ></user-post>
+            <user-post
+              img1="./media/following-post.webp"
+              img2="./media/following-pfp.webp"
+              username="cheekytom99"
+            ></user-post>
+            <user-post
+              img1="./media/following-post.webp"
+              img2="./media/following-pfp.webp"
+              username="playfulkitty21"
+            ></user-post>
+            <user-post
+              img1="./media/following-post.webp"
+              img2="./media/following-pfp.webp"
+              username="cuddlytabby56"
+            ></user-post>
+            <user-post
+              img1="./media/following-post.webp"
+              img2="./media/following-pfp.webp"
+              username="grumpypurrer64"
+            ></user-post>
+            <user-post
+              img1="./media/following-post.webp"
+              img2="./media/following-pfp.webp"
+              username="shinypanther32"
+            ></user-post>
+            <user-post
+              img1="./media/following-post.webp"
+              img2="./media/following-pfp.webp"
+              username="lazylioness15"
+            ></user-post>
+            <user-post
+              img1="./media/following-post.webp"
+              img2="./media/following-pfp.webp"
+              username="bravetiger09"
+            ></user-post>
+            <user-post
+              img1="./media/following-post.webp"
+              img2="./media/following-pfp.webp"
+              username="sillypurrer28"
+            ></user-post>
+            <user-post
+              img1="./media/following-post.webp"
+              img2="./media/following-pfp.webp"
+              username="shadowycat73"
+            ></user-post>
+            <user-post
+              img1="./media/following-post.webp"
+              img2="./media/following-pfp.webp"
+              username="bouncypuma19"
+            ></user-post>
+            <user-post
+              img1="./media/following-post.webp"
+              img2="./media/following-pfp.webp"
+              username="chillcheetah88"
+            ></user-post>
           </div>
         </div>
       </article>

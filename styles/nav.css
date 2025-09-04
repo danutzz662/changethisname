@@ -64,7 +64,7 @@ nav {
 }
 .nav-input-search::-webkit-search-cancel-button {
   -webkit-appearance: none;
-  background: url('../media/close-outline.svg') no-repeat center center;
+  background: url("../media/close-outline.svg") no-repeat center center;
   height: 12px;
   width: 12px;
   background-size: 24px 24px;
@@ -101,6 +101,7 @@ nav {
   align-items: center;
   gap: 10px;
   border-left: 3px solid var(--border-muted);
+  position: relative;
 }
 
 .nav-user {
@@ -120,6 +121,7 @@ nav {
   color: var(--text);
   text-decoration: none;
   font-weight: 600;
+  font-family: "Inter", sans-serif;
 }
 .nav-user-name:hover {
   color: var(--text-muted);
@@ -127,4 +129,56 @@ nav {
 
 .hidden {
   display: none;
+}
+.drop-down-menu {
+  /* display: block; */
+  opacity: 0;
+  width: 80%;
+  z-index: 999;
+  top: 80%;
+  position: absolute;
+  background-color: var(--bg-light);
+  border-radius: 6px;
+  overflow: hidden;
+  max-height: 0px;
+  transform: translateY(-10px);
+  pointer-events: none;
+  transition: max-height 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
+}
+
+.drop-down-menu ul {
+  padding: 0;
+  list-style: none;
+}
+
+.drop-down-menu li a {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+}
+.drop-down-menu span {
+  color: var(--text);
+  font-family: "Inter", sans-serif;
+  margin-left: 10px;
+}
+
+.drop-down-menu li:hover {
+  background-color: var(--bg);
+}
+.drop-down-menu a {
+  text-decoration: none;
+}
+.drop-down-menu ul li:nth-child(4) .mode {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.drop-down-menu ul li:nth-child(4):hover {
+  background-color: var(--bg-light);
+}
+.drop-down-menu.show {
+  opacity: 1;
+  max-height: 500px;
+  transform: translateY(0);
+  pointer-events: auto;
 }
